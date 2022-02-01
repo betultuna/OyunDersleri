@@ -1,0 +1,16 @@
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\bin\Debug\net5.0\Çalışma-02.exe
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\bin\Debug\net5.0\Çalışma-02.deps.json
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\bin\Debug\net5.0\Çalışma-02.runtimeconfig.json
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\bin\Debug\net5.0\Çalışma-02.runtimeconfig.dev.json
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\bin\Debug\net5.0\Çalışma-02.dll
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\bin\Debug\net5.0\ref\Çalışma-02.dll
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\bin\Debug\net5.0\Çalışma-02.pdb
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\obj\Debug\net5.0\Çalışma-02.csproj.AssemblyReference.cache
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\obj\Debug\net5.0\Çalışma-02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\obj\Debug\net5.0\Çalışma-02.AssemblyInfoInputs.cache
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\obj\Debug\net5.0\Çalışma-02.AssemblyInfo.cs
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\obj\Debug\net5.0\Çalışma-02.csproj.CoreCompileInputs.cache
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\obj\Debug\net5.0\Çalışma-02.dll
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\obj\Debug\net5.0\ref\Çalışma-02.dll
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\obj\Debug\net5.0\Çalışma-02.pdb
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\Çalışma-02\obj\Debug\net5.0\Çalışma-02.genruntimeconfig.cache
