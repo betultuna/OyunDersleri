@@ -1,21 +1,39 @@
 ﻿using System;
 namespace Usem.Calisma01
 {
-    class OgrenciKayit
+    class OzelProgram
     {
         static void Main()
         {
-            string giris;
-            string cikis;
+            string deger;
+            string sonDeger;
 
-            Console.WriteLine("Giriş Yapınız...");
-            
-            giris = Console.ReadLine();
-            cikis = "Giriş :  " + giris;
-
-            Console.WriteLine(cikis);
-
+            deger = Giris();                 // string geliyor
+            sonDeger = Proses(deger);        // string bekliyor, string veriyor
+            Cikis(sonDeger);                 // string bekliyor
         }
+
+        static string Giris()
+        {
+            string girisM;
+            // Giriş İşlemleri
+            Console.WriteLine("Giriş Yapınız...");
+            girisM = Console.ReadLine();
+            return girisM;
+        }
+        static string Proses(string g)
+        {
+            // String İşlemleri
+            string cikisM;
+            cikisM = "Giriş :  " + g;
+            return cikisM;
+        }
+
+        static void Cikis(string c)
+        {
+            Console.WriteLine(c);
+        }
+
     }
 }
 
