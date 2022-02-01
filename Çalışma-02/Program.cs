@@ -8,19 +8,26 @@ namespace Usem.Calisma01
             string deger;
             string sonDeger;
 
+            // Giriş
             deger = Giris();                 // string geliyor
+
+            //İşlemler
             sonDeger = Proses(deger);        // string bekliyor, string veriyor
+
+            //Çıkış İşlemleri
             Cikis(sonDeger);                 // string bekliyor
         }
 
+
         static string Giris()
         {
-            string girisM;
             // Giriş İşlemleri
+            string girisM;
             Console.WriteLine("Giriş Yapınız...");
             girisM = Console.ReadLine();
             return girisM;
         }
+
         static string Proses(string g)
         {
             // String İşlemleri
@@ -28,6 +35,7 @@ namespace Usem.Calisma01
             cikisM = "Giriş :  " + g;
             return cikisM;
         }
+
 
         static void Cikis(string c)
         {
