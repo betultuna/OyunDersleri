@@ -8,6 +8,8 @@ namespace Usem.Calisma01
             string giris;
             string cikis;
 
+            Console.WriteLine("Giriş Yapınız...");
+            
             giris = Console.ReadLine();
             cikis = "Giriş :  " + giris;
 
