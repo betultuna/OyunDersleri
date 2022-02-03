@@ -24,39 +24,32 @@ namespace Usem.Calisma01
             // Giriş işlemleri
             Console.WriteLine("Giriş Yapınız...");
             girisM = Console.ReadLine();
-            
-            Console.ReadLine();
-            // uzunluk hesaplama
 
-            // Console.WriteLine(uzunluk);
-
-            // koşul?  en az 3 karakter
-
-            
-
-            if (Gecerli(girisM)) {
-                
-                // koşul TRUE doğru ise çalıştırılır
-
-            } else {
-                // koşul FALSE yanlış ise çalıştırılır
-
-            }
-
-
-
-
-            return girisM;
+            if (Gecerli(girisM))
+                return girisM;
+            return "TEST";
         }
 
 
-        static bool Gecerli (string metin){
-            bool bitti = true;
-            
+        static bool Gecerli(string metin)
+        {
+            bool gecerli = true;
+
+            // uzunluk hesaplama
             int uzunluk = metin.Length;
 
-            
-            return bitti;
+            // uzunluk değerlendirme
+            if (uzunluk > 3)
+            {
+                // koşul TRUE doğru ise çalıştırılır
+                gecerli = true;
+            }
+            else
+            {
+                // koşul FALSE yanlış ise çalıştırılır
+                gecerli = false;
+            }
+            return gecerli;
         }
 
 
