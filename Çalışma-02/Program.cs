@@ -21,15 +21,18 @@ namespace Usem.Calisma01
             Console.WriteLine("Giriş Yapınız...");
             ortadaDeger = Console.ReadLine();
 
+            ortadaDeger = Gecerli() ? "\""+ ortadaDeger+"\" ifadesi geçerlidir." : "Hata verildi";
             
-            if (Gecerli())
-            {
-                ortadaDeger = ortadaDeger;
-            }
-            else
-            {
-                ortadaDeger = "Hata verildi";
-            }
+
+            // alternatif if
+            // if (Gecerli())
+            // {
+            //     ortadaDeger = "\""+ ortadaDeger+"\" ifadesi geçerlidir.";
+            // }
+            // else
+            // {
+            //     ortadaDeger = "Hata verildi";
+            // }
         }
 
         static bool Gecerli()
