@@ -40,6 +40,11 @@ namespace Hangman
 
         }
 
+        private static void KelimeGoster(string oynananKelime)
+        {
+            throw new NotImplementedException();
+        }
+
         private static void TahminDegerlendir()
         {
             Console.WriteLine("Tahmin degerlendirildi..");
@@ -51,10 +56,6 @@ namespace Hangman
             tahmin = 'a';
         }
 
-        private static void KelimeGoster(string kelime)
-        {
-            Console.WriteLine(kelime);
-        }
 
         private static void ProgramBaslat()
         {

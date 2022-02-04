@@ -8,6 +8,12 @@ namespace ZarOyunu
         {
             int oyunSonuc = Oyna();
             Final(oyunSonuc);
+            Deneme();
+        }
+
+        private static void Deneme()
+        {
+            throw new NotImplementedException();
         }
 
         private static int Oyna()
@@ -44,23 +50,23 @@ namespace ZarOyunu
             // üç zar aynı ise 6
             // a = b VE b = c >>>  a = c
             // üç zar aynı değilse
-                    // iki zar aynı ise 2
-                    // a = b  VEYA  a = c VEYA   b = c
+            // iki zar aynı ise 2
+            // a = b  VEYA  a = c VEYA   b = c
             // 
-            if (z1 == z2 && z2 == z3 ) 
+            if (z1 == z2 && z2 == z3)
             {
                 // 3 aynı var
                 degisken = 6;
-            } 
-            else if (z1 == z2 || z1 == z3 || z2 == z3) 
+            }
+            else if (z1 == z2 || z1 == z3 || z2 == z3)
             {
                 // 2 aynı var
-                  degisken = 2;
-            } 
+                degisken = 2;
+            }
             else
             {
                 // yok
-                  degisken = 0;
+                degisken = 0;
             }
             return degisken;
         }
