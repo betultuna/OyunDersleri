@@ -1,0 +1,16 @@
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\bin\Debug\net5.0\if-else.exe
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\bin\Debug\net5.0\if-else.deps.json
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\bin\Debug\net5.0\if-else.runtimeconfig.json
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\bin\Debug\net5.0\if-else.runtimeconfig.dev.json
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\bin\Debug\net5.0\if-else.dll
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\bin\Debug\net5.0\ref\if-else.dll
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\bin\Debug\net5.0\if-else.pdb
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\obj\Debug\net5.0\if-else.csproj.AssemblyReference.cache
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\obj\Debug\net5.0\if-else.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\obj\Debug\net5.0\if-else.AssemblyInfoInputs.cache
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\obj\Debug\net5.0\if-else.AssemblyInfo.cs
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\obj\Debug\net5.0\if-else.csproj.CoreCompileInputs.cache
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\obj\Debug\net5.0\if-else.dll
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\obj\Debug\net5.0\ref\if-else.dll
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\obj\Debug\net5.0\if-else.pdb
+C:\Users\Student1\Desktop\usem-gd\OyunDersleri\if-else\obj\Debug\net5.0\if-else.genruntimeconfig.cache

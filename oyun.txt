@@ -1,0 +1,28 @@
+Rastgele oyun oluşturma
+
+Üç adet 6 taraflı zar atma benzetimini yapmak için 
+Random.Next() yöntemini kullanacağız. 
+
+Puanı hesaplamak için değerleri değerlendireceğiz.
+ 
+Puan, rastgele toplamdan büyükse, kullanıcıya kazanma iletisi görüntüleriz. 
+Aksi takdirde, kullanıcıya kaybetme iletisi görüntüleriz.
+
+Attığınız iki zar aynı değerle sonuçlanırsa 
+		çifte zar attığınız için ekstra iki puan kazanırsınız.
+Attığınız üç zarın tümü de aynı değerle sonuçlanırsa 
+		üçlü zar attığınız için ekstra altı puan kazanırsınız.
+Attığınız üç zarın toplamı artı ekstra puanlar 
+			15 veya daha büyük olursa oyunu kazanırsınız. 
+			Aksi takdirde kaybedersiniz.
+			
+Oyunu daha eğlenceli hale getirmek için, 
+oyunu kazanma veya kaybetme modeli yerine, 
+her bir puan için kurgusal ödül kazanma modeline geçirelim. 
+Dört ödül sunacağız. 
+Oyuncu yalnızca bir ödül kazanmalıdır.
+
+Oyuncu 16 veya daha yüksek puan alırsa yeni bir araba kazanır.
+Oyuncu 10 veya daha yüksek puan alırsa yeni bir bilgisayar kazanır.
+Oyuncu tam 7 puan alırsa seyahat kazanır.
+Aksi takdirde oyuncu bir bardak su kazanır.
