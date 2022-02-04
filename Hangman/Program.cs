@@ -1,73 +1,72 @@
-﻿using System;
-namespace Usem.Calisma01
+﻿// Özellik : Kullanıcı tüm kelimeyi tahmin edebilsin.
+// Özellik : Tahmin edilmiş harflerin gösterilmesi. 
+// Özellik : ipucu vermek
+
+using System;
+
+namespace Hangman
 {
-    class OzelProgram
+    class Program
     {
-        static void Main()
+        static string oynananKelime;
+        static char tahmin;
+        
+        static void Main(string[] args)
         {
-            string deger;
-            string sonDeger;
+            //
+            ProgramBaslat();
 
-            // Giriş
-            deger = Giris();
+            //
+            OyunOyna();
 
-            // İşlemler
-            sonDeger = Proses(deger);
-
-            // Çıkış işlemler
-            Cikis(sonDeger);
+            //
+            ProgramBitir();
         }
 
-        static string Giris()
+        private static void OyunOyna()
         {
-            string girisM;
-            // Giriş işlemleri
-            Console.WriteLine("Giriş Yapınız...");
-            girisM = Console.ReadLine();
+            Console.WriteLine("Oyun başladı");
+            // Kelime göster (parametrik, hangi harflerin gösterileceği liste olarak verilebilir)
+            KelimeGoster(oynananKelime);
 
-            if (Gecerli(girisM))
-                return girisM;
-            return "TEST";
-        }
+            // Kullanıcıdan tahmin al
+            TahminAl();
 
+            // Tahmini değerlendir
+            TahminDegerlendir();
 
-        static bool Gecerli(string metin)
-        {
-            bool gecerli = true;
-
-            // uzunluk hesaplama
-            int uzunluk = metin.Length;
-
-            // uzunluk değerlendirme
-            if (uzunluk > 3)
-            {
-                // koşul TRUE doğru ise çalıştırılır
-                gecerli = true;
-            }
-            else
-            {
-                // koşul FALSE yanlış ise çalıştırılır
-                gecerli = false;
-            }
-            return gecerli;
-        }
-
-
-
-        static string Proses(string g)
-        {
-            // String işlemler
-            string cikisM;
-            cikisM = "Giriş :  " + g;
-            return cikisM;
+            // Tahmin sonrası kelime gösterme
+            KelimeGoster(oynananKelime);
 
         }
 
-        static void Cikis(string c)
+        private static void TahminDegerlendir()
         {
-            // Çıkış İşlemler
-            Console.WriteLine(c);
+            Console.WriteLine("Tahmin degerlendirildi..");
         }
+
+        private static void TahminAl()
+        {
+            Console.WriteLine("Tahmin alınıyor");
+            tahmin = 'a';
+        }
+
+        private static void KelimeGoster(string kelime)
+        {
+            Console.WriteLine(kelime);
+        }
+
+        private static void ProgramBaslat()
+        {
+            Console.WriteLine("Program basladı");
+            oynananKelime = "araba";
+
+        }
+
+        private static void ProgramBitir()
+        {
+            Console.WriteLine("Program bitti.");
+        }
+
     }
 }
-

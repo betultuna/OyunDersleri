@@ -18,10 +18,15 @@ namespace Usem.Calisma01
         {
             // string girisM;
             // Giriş işlemleri
-            Console.WriteLine("Giriş Yapınız...");
+            Console.WriteLine("Giriş Yapınız...(en az 3 karakter giriniz)");
             ortadaDeger = Console.ReadLine();
 
-            ortadaDeger = Gecerli() ? "\""+ ortadaDeger+"\" ifadesi geçerlidir." : "Hata verildi";
+            if (!Gecerli())
+                Giris();
+
+
+            //tek  satır alternatif
+            //ortadaDeger = Gecerli() ? "\""+ ortadaDeger+"\" ifadesi geçerlidir." : "Hata verildi";
             
 
             // alternatif if
@@ -37,13 +42,13 @@ namespace Usem.Calisma01
 
         static bool Gecerli()
         {
-            bool gecerli = true;
+            bool gecerli;
 
             // uzunluk hesaplama
             int uzunluk = ortadaDeger.Length;
 
             // uzunluk değerlendirme
-            if (uzunluk > 3)
+            if (uzunluk >= 3)
             {
                 // koşul TRUE doğru ise çalıştırılır
                 gecerli = true;
