@@ -3,77 +3,66 @@ namespace Usem.Calisma01
 {
     class OzelProgram
     {
+        static string ortadaDeger;
         static void Main()
         {
-            string deger;
-            string sonDeger;
-
             // Giriş
-            deger = Giris();
-
+            Giris();
             // İşlemler
-            sonDeger = Proses(deger);
-
+            Proses();
             // Çıkış işlemler
-            Cikis(sonDeger);
+            Cikis();
         }
 
-        static string Giris()
+        static void Giris()
         {
-            string girisM;
+            // string girisM;
             // Giriş işlemleri
             Console.WriteLine("Giriş Yapınız...");
-            girisM = Console.ReadLine();
-            
-            Console.ReadLine();
-            // uzunluk hesaplama
-
-            // Console.WriteLine(uzunluk);
-
-            // koşul?  en az 3 karakter
+            ortadaDeger = Console.ReadLine();
 
             
-
-            if (Gecerli(girisM)) {
-                
-                // koşul TRUE doğru ise çalıştırılır
-
-            } else {
-                // koşul FALSE yanlış ise çalıştırılır
-
+            if (Gecerli())
+            {
+                ortadaDeger = ortadaDeger;
             }
-
-
-
-
-            return girisM;
+            else
+            {
+                ortadaDeger = "Hata verildi";
+            }
         }
 
+        static bool Gecerli()
+        {
+            bool gecerli = true;
 
-        static bool Gecerli (string metin){
-            bool bitti = true;
-            
-            int uzunluk = metin.Length;
+            // uzunluk hesaplama
+            int uzunluk = ortadaDeger.Length;
 
-            
-            return bitti;
+            // uzunluk değerlendirme
+            if (uzunluk > 3)
+            {
+                // koşul TRUE doğru ise çalıştırılır
+                gecerli = true;
+            }
+            else
+            {
+                // koşul FALSE yanlış ise çalıştırılır
+                gecerli = false;
+            }
+            return gecerli;
         }
 
-
-
-        static string Proses(string g)
+        static void Proses()
         {
             // String işlemler
-            string cikisM;
-            cikisM = "Giriş :  " + g;
-            return cikisM;
-
+            ortadaDeger = "Giriş :  " + ortadaDeger;
         }
 
-        static void Cikis(string c)
+        static void Cikis()
         {
             // Çıkış İşlemler
-            Console.WriteLine(c);
+            Console.WriteLine(ortadaDeger);
         }
     }
 }
