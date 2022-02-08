@@ -10,7 +10,7 @@ namespace Hangman
     {
         static string oynananKelime;
         static char tahmin;
-        
+
         static void Main(string[] args)
         {
             //
@@ -40,11 +40,6 @@ namespace Hangman
 
         }
 
-        private static void KelimeGoster(string oynananKelime)
-        {
-            throw new NotImplementedException();
-        }
-
         private static void TahminDegerlendir()
         {
             Console.WriteLine("Tahmin degerlendirildi..");
@@ -52,16 +47,19 @@ namespace Hangman
 
         private static void TahminAl()
         {
-            Console.WriteLine("Tahmin alınıyor");
             tahmin = 'a';
+            Console.WriteLine("Tahmin edilen harf : " + tahmin);
         }
 
+        private static void KelimeGoster(string kelime)
+        {
+            Console.WriteLine(kelime);
+        }
 
         private static void ProgramBaslat()
         {
             Console.WriteLine("Program basladı");
             oynananKelime = "araba";
-
         }
 
         private static void ProgramBitir()
