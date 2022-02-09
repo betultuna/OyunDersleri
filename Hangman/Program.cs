@@ -4,18 +4,19 @@
 
 using System;
 
-namespace Hangman
+namespace Usem.Oyunlar
 {
-    class Program
+    class KelimeTahmin
     {
-        static string oynananKelime = "araba";
+        static string oynananKelime;
         static char tahmin;
-        static bool kalanHarfVar = true;
+        static bool kalanHarfVar;
+        static int kalanHarfSayisi;
 
         // tahmin değerlendirme veri yapısı
-        static char[] maskeliDizi = new char[oynananKelime.Length];
+        public static char[] maskeliDizi;
 
-        static void Main(string[] args)
+        public static void OyunAkis()
         {
             //
             ProgramBaslat();
@@ -27,37 +28,38 @@ namespace Hangman
             ProgramBitir();
         }
 
-        private static void OyunOyna()
+        public static void OyunOyna()
         {
-            Console.WriteLine("Oyun başladı");
+            // Console.WriteLine("Oyun başladı"); Geliştirme 
             // Kelime göster (parametrik, hangi harflerin gösterileceği liste olarak verilebilir)
-            KelimeGoster();
+            // KelimeGoster(); // _ _ _ _ _ _ 
 
             while (kalanHarfVar)
             {
+                // Temizle
+                Console.Clear();
+
+                // Başlangıç ve tahmin sonrası kelime gösterme
+                KelimeGoster();
+
                 // Kullanıcıdan tahmin al
                 TahminAl();
 
                 // Tahmini değerlendir
                 TahminDegerlendir();
 
-                // Tahmin sonrası kelime gösterme
-                KelimeGoster();
             }
 
 
         }
 
-
-        private static void TahminDegerlendir()
+        public static void TahminDegerlendir()
         {
             // veri yapıları
             char[] kelimeDizi = oynananKelime.ToCharArray(); // a,r,a,b,a
 
-            int uzunluk = oynananKelime.Length;
-            int kalanHarfSayisi = uzunluk;
-            //
-            for (int i = 0; i < uzunluk; i++)
+            // kelime içinde bulur maskeli dizide işaretler
+            for (int i = 0; i < kelimeDizi.Length; i++)
             {
                 if (tahmin == kelimeDizi[i])
                 {
@@ -68,6 +70,11 @@ namespace Hangman
 
             // Değerlendirme bitti
             kalanHarfVar = kalanHarfSayisi == 0 ? false : true;
+
+
+
+
+
             // if (kalanHarfSayisi == 0) {
             //     kalanHarfVar = false;
             // }
@@ -75,7 +82,7 @@ namespace Hangman
             Console.WriteLine("Tahmin degerlendirildi..");
         }
 
-        private static void TahminAl()
+        public static void TahminAl()
         {
             // tahmin = 'a';
             //ConsoleKeyInfo cKey = Console.ReadKey();
@@ -99,7 +106,7 @@ namespace Hangman
             }
         }
 
-        private static void KelimeGoster()
+        public static void KelimeGoster()
         {
             Console.WriteLine(maskeliDizi);
 
@@ -110,21 +117,37 @@ namespace Hangman
             // Console.WriteLine(); // imleç başa gelsin diye.... 
         }
 
-        private static void ProgramBaslat()
+        public static void ProgramBaslat()
         {
-            Console.WriteLine("Program basladı");
-            oynananKelime = "araba";
+            // Console.WriteLine("Program basladı"); Geliştirme
+            oynananKelime = "ismet";
+            kalanHarfSayisi = oynananKelime.Length;
+            kalanHarfVar = oynananKelime.Length > 0 ? true : false;
 
-            // Maskeli dizi başlangıç durumu
+
+            // Maskeli dizi hazırlama -  başlangıç durumu
+            maskeliDizi = new char[oynananKelime.Length];
             for (int i = 0; i < oynananKelime.Length; i++)
             {
                 maskeliDizi[i] = '_';
             }
         }
 
-        private static void ProgramBitir()
+        public static void ProgramBitir()
         {
-            Console.WriteLine("Program bitti.");
+            Console.WriteLine($" Kelime Bulundu: {oynananKelime} \nProgram bitti.");
+        }
+
+    }
+
+    class OyunlarProgram
+    {
+        static void Main()
+        {
+            // Kelime Tahmin oyunu oynat
+            Console.WriteLine("Oyun oynanacak...");
+            KelimeTahmin.OyunAkis();
+
         }
 
     }
