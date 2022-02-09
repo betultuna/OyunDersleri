@@ -8,13 +8,13 @@ namespace Usem.Oyunlar
 {
     class KelimeTahmin
     {
-        static string oynananKelime;
         static char tahmin;
         static bool kalanHarfVar;
         static int kalanHarfSayisi;
 
         // tahmin değerlendirme veri yapısı
         public static char[] maskeliDizi;
+        public static string oynanacakKelime;
 
         public static void OyunAkis()
         {
@@ -37,7 +37,7 @@ namespace Usem.Oyunlar
             while (kalanHarfVar)
             {
                 // Temizle
-                Console.Clear();
+                //Console.Clear();
 
                 // Başlangıç ve tahmin sonrası kelime gösterme
                 KelimeGoster();
@@ -56,7 +56,7 @@ namespace Usem.Oyunlar
         public static void TahminDegerlendir()
         {
             // veri yapıları
-            char[] kelimeDizi = oynananKelime.ToCharArray(); // a,r,a,b,a
+            char[] kelimeDizi = oynanacakKelime.ToCharArray(); // a,r,a,b,a
 
             // kelime içinde bulur maskeli dizide işaretler
             for (int i = 0; i < kelimeDizi.Length; i++)
@@ -120,14 +120,13 @@ namespace Usem.Oyunlar
         public static void ProgramBaslat()
         {
             // Console.WriteLine("Program basladı"); Geliştirme
-            oynananKelime = "ismet";
-            kalanHarfSayisi = oynananKelime.Length;
-            kalanHarfVar = oynananKelime.Length > 0 ? true : false;
+            kalanHarfSayisi = oynanacakKelime.Length;
+            kalanHarfVar = oynanacakKelime.Length > 0 ? true : false;
 
 
             // Maskeli dizi hazırlama -  başlangıç durumu
-            maskeliDizi = new char[oynananKelime.Length];
-            for (int i = 0; i < oynananKelime.Length; i++)
+            maskeliDizi = new char[oynanacakKelime.Length];
+            for (int i = 0; i < oynanacakKelime.Length; i++)
             {
                 maskeliDizi[i] = '_';
             }
@@ -135,7 +134,7 @@ namespace Usem.Oyunlar
 
         public static void ProgramBitir()
         {
-            Console.WriteLine($" Kelime Bulundu: {oynananKelime} \nProgram bitti.");
+            Console.WriteLine($" Kelime Bulundu: {oynanacakKelime} \nProgram bitti.");
         }
 
     }
@@ -146,6 +145,8 @@ namespace Usem.Oyunlar
         {
             // Kelime Tahmin oyunu oynat
             Console.WriteLine("Oyun oynanacak...");
+            KelimeTahmin.oynanacakKelime = Console.ReadLine();
+            Console.BackgroundColor = ConsoleColor.Black;
             KelimeTahmin.OyunAkis();
 
         }
