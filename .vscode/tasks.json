@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Hangman/Hangman.csproj",
+                "${workspaceFolder}/UsemGenel/UsemGenel.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Hangman/Hangman.csproj",
+                "${workspaceFolder}/UsemGenel/UsemGenel.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/Hangman/Hangman.csproj"
+                "${workspaceFolder}/UsemGenel/UsemGenel.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

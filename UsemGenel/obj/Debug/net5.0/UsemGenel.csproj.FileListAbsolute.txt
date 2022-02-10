@@ -1,0 +1,16 @@
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\bin\Debug\net5.0\UsemGenel.exe
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\bin\Debug\net5.0\UsemGenel.deps.json
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\bin\Debug\net5.0\UsemGenel.runtimeconfig.json
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\bin\Debug\net5.0\UsemGenel.runtimeconfig.dev.json
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\bin\Debug\net5.0\UsemGenel.dll
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\bin\Debug\net5.0\ref\UsemGenel.dll
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\bin\Debug\net5.0\UsemGenel.pdb
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\obj\Debug\net5.0\UsemGenel.csproj.AssemblyReference.cache
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\obj\Debug\net5.0\UsemGenel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\obj\Debug\net5.0\UsemGenel.AssemblyInfoInputs.cache
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\obj\Debug\net5.0\UsemGenel.AssemblyInfo.cs
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\obj\Debug\net5.0\UsemGenel.csproj.CoreCompileInputs.cache
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\obj\Debug\net5.0\UsemGenel.dll
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\obj\Debug\net5.0\ref\UsemGenel.dll
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\obj\Debug\net5.0\UsemGenel.pdb
+C:\Users\Student1\Documents\OyunDersleri\OyunDersleri\UsemGenel\obj\Debug\net5.0\UsemGenel.genruntimeconfig.cache
